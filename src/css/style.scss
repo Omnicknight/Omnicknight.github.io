@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1440px;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+.header {
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+    li {
+      font-size: 25px;
+      margin: {
+        left: 15px;
+        right: 15px;
+      }
+    }
+  }
+}
+
+.search-wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+
+    & form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & input {
+      min-width: 290px;
+      height: 40px;
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 15px;
+      border: 1px solid ;
+    }
+
+    & button {
+      height: 30px;
+      width: 100px;
+    }
+  }
+
+  &__history {
+    min-width: 290px;
+    text-align: center;
+
+    & p {
+      font-size: 20px;
+    }
+
+    &-element {
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.error-form {
+  color: red;
+}
+
+.vin-params {
+  margin-bottom: 20px;
+  text-align: center;
+
+  & p {
+    text-decoration: underline;
+  }
+}
+
+.variables {
+  & .variables-name {
+    text-decoration: underline;
+  }
+}
