@@ -1,12 +1,13 @@
 import React from "react";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
-const BrowserRouter = require("react-router-dom").BrowserRouter;
-const Route = require("react-router-dom").Route;
-const Link = require("react-router-dom").Link;
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Variables from "./pages/Variables";
 import './App.css';
+
+const BrowserRouter = require("react-router-dom").BrowserRouter;
+const Route = require("react-router-dom").Route;
+const Link = require("react-router-dom").Link;
 
 
 function App() {
