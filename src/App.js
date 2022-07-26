@@ -6,6 +6,7 @@ import Variables from "./pages/Variables";
 import './App.css';
 
 const BrowserRouter = require("react-router-dom").BrowserRouter;
+const Routes = require("react-router-dom").Routes;
 const Route = require("react-router-dom").Route;
 const Link = require("react-router-dom").Link;
 
