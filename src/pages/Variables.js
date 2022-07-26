@@ -15,16 +15,17 @@ const Variables = () => {
     return (
 
         <div className="container">
-
-            {
-                Object.keys(resultArr).map(function(key) {
-                    return (
-                        <div className="variables">
-                            <span className="variables-name">{key}</span>: <span dangerouslySetInnerHTML={{ __html: `${resultArr[key]}` }}></span>
-                        </div>
-                    )
-                }, resultArr)
-            }
+            <div className="variables-wrap">
+                {
+                    Object.keys(resultArr).map(function(key, i) {
+                        return (
+                            <div className="variables">
+                                <span className="variables-name">{i+1}) {key}</span>: <span dangerouslySetInnerHTML={{ __html: `${resultArr[key]}` }}></span>
+                            </div>
+                        )
+                    }, resultArr)
+                }
+            </div>
         </div>
     )
 }
